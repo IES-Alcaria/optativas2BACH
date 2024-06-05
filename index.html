@@ -2,47 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Add Material CSS, replace Bootstrap CSS -->
-    <link href="assets/css/material.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/home.css">
     <title>Formulario de Preferencias de Asignaturas</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="assets/js/material.min.js"></script>
-
-    <script>
-	function siguiente_paso(){
-	    let formu=document.getElementById("my-google-sheet");
-            let siguiente=document.getElementById("modalidad").value;
-
-	    if (siguiente=="Ciencias y Tecnología") {
-                formu.setAttribute("action","ciencias_tecnologia.html");
-            } else {
-                formu.setAttribute("action","hh_ccss.html");
-            }
-	    return true;
-        }
-    </script>
 </head>
 <body id="cuerpo">
-    <form name="my-google-sheet" id="my-google-sheet"  onsubmit="return siguiente_paso()" method="GET" action="">
 	<div id="encabezado" style="display:flex;align-items:center;">
 	    <img src="LOGO_IES_ALCARIA.png" width="10%">
 	    <h2 style="flex-grow:1;display:inline-block;">PREFERENCIA DE MATERIAS OPTATIVAS PARA 2ºBACHILLERATO</h2>
 	</div>
         <br>
 
-        <br><label for="religion">SELECCIONA UNA MODALIDAD:</label>
-        <select id="modalidad" name="modalidad" required>
-            <option value="Ciencias y Tecnología">Ciencias y Tecnología</option>
-            <option value="Humanidades y Ciencias Sociales">Humanidades y Ciencias Sociales</option>
-        </select><br><br><br>
-    	<button type="submit" class="btn btn-primary btn-sm">Siguiente</button>
-    </form>
+        <br><h3>SELECCIONA UNA MODALIDAD:</h3>
+	<ul>
+            <h4><li><a href="ciencias_tecnologia.html"> CIENCIAS Y TECNOLOGÍA</a></li></h4>
+            <h4><li><a href="hh_ccss.html"> HUMANIDADES Y CIENCIAS SOCIALES</a></li></h4>
+	</ul>
+	<br><br><br>
+
 </body>
 </html>
