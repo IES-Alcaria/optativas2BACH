@@ -63,7 +63,7 @@
 
 
 	function calcular_distintos(){
-            let opt = [document.getElementById("opt1").value,document.getElementById("opt2").value,document.getElementById("opt3").value,document.getElementById("opt4").value,document.getElementById("opt5").value,document.getElementById("opt6").value,document.getElementById("opt7").value,document.getElementById("opt8").value,document.getElementById("opt9").value,document.getElementById("opt10").value,document.getElementById("opt11").value,document.getElementById("opt12").value,document.getElementById("opt13").value];
+            let opt = [document.getElementById("opt1").value,document.getElementById("opt2").value,document.getElementById("opt3").value,document.getElementById("opt4").value,document.getElementById("opt5").value,document.getElementById("opt6").value,document.getElementById("opt7").value,document.getElementById("opt8").value,document.getElementById("opt9").value,document.getElementById("opt10").value,document.getElementById("opt11").value,document.getElementById("opt12").value,document.getElementById("opt13").value,document.getElementById("opt14").value];
 
             let error = document.getElementById("error");
 
@@ -201,6 +201,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt2">Ciencias de la tierra y el medio ambiente:</label>
@@ -218,6 +219,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt3">Educación para la ciudadanía democrática II:</label>
@@ -235,6 +237,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt4">Electrotecnia:</label>
@@ -252,6 +255,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt5">Programación y Computación:</label>
@@ -269,6 +273,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt6">Psicología:</label>
@@ -286,6 +291,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt7">Segunda Lengua Extranjera:</label>
@@ -303,6 +309,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt8">TIC II:</label>
@@ -320,6 +327,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt9">Estadística II:</label>
@@ -337,6 +345,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt10">Inglés B1 Avanzado:</label>
@@ -354,6 +363,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt11">Inteligencia Emocional Avanzado:</label>
@@ -371,6 +381,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt12">Iniciación a Ciencias de la Salud:</label>
@@ -388,6 +399,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <label for="opt13">Francés B1:</label>
@@ -405,6 +417,25 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
                 <option value="13">13</option>
+                <option value="14">14</option>
+            </select><br>
+
+            <label for="opt14">Finanzas y Economía:</label>
+            <select id="opt14" name="Finanzas y Economía" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
             </select><br>
 
             <span id="error" class="error">No puedes repetir números en estas asignaturas.</span>
@@ -420,7 +451,7 @@
 
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4XINcQIeOU23cn1CqJuFK2Xh7vdOd-SDPryCpT3uhANl1i5nuXtqYEr1CraIceZ92oA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxY6l7B97txGDXuojFZnNQ_o0Gsr1PzketSkMnF7btO6QwwtbOk07c6q4qyvP5V1o_6/exec'
         const form = document.forms['my-google-sheet']
 
         form.addEventListener('submit', e => {
